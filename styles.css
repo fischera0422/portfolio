@@ -7,7 +7,6 @@ section{
     color: #865445;
     border: 2px solid #865445;
     padding: 1rem;
-    margin: 1rem 0;
 }
 nav{
     background-color: #fffff0;
@@ -18,7 +17,7 @@ nav{
     text-align: center;
 }
 header>img{
-    max-width: 100%;
+    max-width: 80%;
 }
 nav>a{
     color: #865445;
@@ -26,7 +25,7 @@ nav>a{
 }
 header{
     display: grid;
-    grid-template-columns: 20rem 2fr;
+    grid-template-columns: 2fr;
 }
 header>img{
     max-height: 20rem;
@@ -46,28 +45,61 @@ nav{
 }
 #contact>img{
     max-width: 50%;
-}
-#contact{
     display: inline-block;
-    width: 45%;
 }
-.me>img{
-    width: 45%;
+section:nth-child(1){
     display: inline-block;
+    width: 35%;
+    vertical-align: middle; 
+    margin: 1rem;
+}
+.me{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
 }
 #aboutme{
-    width: 45%;
     display: inline-block;
+    width: 35%;
+    margin: 1rem;
+}
+#aboutme>img{
+    width: 50%;
+    display: inline-block;
+}
+.aboutmeleaf>img{
+    max-width: 45%; 
 }
 #projects{
-    width: 45%;
     display: inline-block;
+    width: 50%;
+    margin: 1rem;
 }
-#awards{
-    width: 45%;
+#projects>img{
+    width: 50%;
     display: inline-block;
 }
 #school{
-    width: 45%;
     display: inline-block;
+    width: 50%;
+    margin: 1rem;
+}
+#awards{
+    display: inline-block;
+    width: 50%;
+    margin: 1rem;
+}
+#awards>img{
+    max-width: 50%;
+    display: inline-block;
+}
+#school>img{
+    max-width: 30%;
+    display: inline-block;
+}
+.projectleaf{
+    max-width: 50%;
+}
+.awardleaf{
+    max-width: 50%;
 }
