@@ -17,7 +17,7 @@ nav{
     text-align: center;
 }
 header>img{
-    max-width: 80%;
+    width: 80%;
 }
 nav>a{
     color: #865445;
@@ -25,7 +25,8 @@ nav>a{
 }
 header{
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.25rem;
 }
 header>img{
     max-height: 20rem;
@@ -37,14 +38,19 @@ nav{
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav>a:hover{
+    color: #85ab70;
 }
 .headerleaf{
-    max-width: 90%;
+    width: 80%;
     grid-column-start: 2;
     transform: rotate(50deg);
 }
 #contact>img{
-    max-width: 50%;
+    max-width: 60%;
     display: inline-block;
 }
 section:nth-child(1){
@@ -57,49 +63,225 @@ section:nth-child(1){
     display: inline-block;
     width: 50%;
     vertical-align: middle;
+    margin-left: 2rem;
+}
+.me>img{
+    width: 80%;
 }
 #aboutme{
     display: inline-block;
     width: 35%;
     margin: 1rem;
+    vertical-align: middle;
 }
 #aboutme>img{
     width: 50%;
     display: inline-block;
 }
-.aboutmeleaf>img{
-    max-width: 45%; 
+.aboutmeleaf{
+    width: 45%; 
+    display: inline-block;
+    vertical-align: middle;
 }
 #projects{
-    display: inline-block;
-    width: 50%;
+    width: 35%;
     margin: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    vertical-align: middle;
+    display: inline-grid;
 }
 #projects>img{
-    width: 50%;
+    width: 75%;
     display: inline-block;
+}
+#projects>a{
+    padding: 2rem;
+}
+.projectleaf{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
 }
 #school{
     display: inline-block;
-    width: 50%;
+    width: 40%;
     margin: 1rem;
 }
 #awards{
     display: inline-block;
-    width: 50%;
+    width: 45%;
     margin: 1rem;
 }
 #awards>img{
-    max-width: 50%;
+    width: 50%;
     display: inline-block;
 }
 #school>img{
-    max-width: 30%;
+    width: 50%;
     display: inline-block;
 }
-.projectleaf{
-    max-width: 50%;
+.schoolleaf{
+    width: 40%;
+    display: inline-block;
 }
 .awardleaf{
-    max-width: 50%;
+    width: 40%;
+    display: inline-block;
+}
+.endleaf{
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.uwec{
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    margin-left: 2rem;
+}
+.uwec>img{
+    width: 100%;
+}
+@media (min-width:1000px){
+    nav{
+        background-color: #fffff0;
+        color: #865445;
+        border: 2px solid #865445;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    header>img{
+        max-width: 100%;
+    }
+    nav>a{
+        color: #865445;
+        text-decoration: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header>img{
+        max-height: 30rem;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    nav{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav>a:hover{
+        color: #85ab70;
+    }
+    .headerleaf{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        transform: rotate(50deg);
+        width: 50%;
+        display: inline-block;
+    }
+    .me>img{
+        display: inline-block;
+        width: 65%;
+        vertical-align: middle;
+        margin-left: 10rem;
+    }
+    section:nth-child(1){
+        display: inline-block;
+        width: 35%;
+        vertical-align: middle; 
+        margin: 6rem;
+        font-size: 1.25rem;
+    }
+    #contact>img{
+        width: 30%;
+        display: inline-block;
+        padding: 2rem;
+    }
+    #aboutme{
+        display: inline-block;
+        width: 35%;
+        margin-left: 15rem;
+        vertical-align: middle;
+        font-size: 1.25rem;
+    }
+    #aboutme>img{
+        width: 35%;
+        display: inline-block;
+    }
+    .aboutmeleaf{
+        width: 25%; 
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15rem;
+    }
+    #projects{
+        width: 35%;
+        margin-left: 5rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        vertical-align: middle;
+        display: inline-grid;
+        font-size: 1.25rem;
+    }
+    #projects>img{
+        width: 50%;
+        display: inline-block;
+    }
+    #projects>a{
+        padding: 2rem;
+    }
+    .projectleaf{
+        width: 25%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15rem;
+    }
+    #school{
+        display: inline-block;
+        width: 40%;
+        margin: 5rem;
+        vertical-align: middle;
+    }
+    #awards{
+        display: inline-block;
+        width: 35%;
+        margin-left: 20rem;
+        vertical-align: middle;
+    }
+    #awards>img{
+        width: 35%;
+        display: inline-block;
+    }
+    #school>img{
+        width: 35%;
+        display: inline-block;
+    }
+    .schoolleaf{
+        width: 25%;
+        display: inline-block;
+        margin-left: 10rem;
+        vertical-align: middle;
+    }
+    .awardleaf{
+        width: 25%;
+        display: inline-block;
+        margin-left: 10rem;
+        vertical-align: middle;
+    }
+    .endleaf{
+        width: 25%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10rem;
+    }
+    .uwec{
+        display: inline-block;
+        width: 45%;
+        vertical-align: middle;
+        margin-left: 20rem;
+    }
 }
